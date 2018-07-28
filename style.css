@@ -1,0 +1,92 @@
+body {
+    background-image: url("../images/background.png");
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 40px;
+}
+
+/*Jumbotron Header*/
+.jumbotron {
+    opacity: 0.7;
+    font-family: 'Exo 2', sans-serif;
+    text-align: center;
+    color: #444;
+}
+
+/*Headline*/
+.display-4 {
+    font-weight: 300;
+    font-size: 4em;
+}
+
+#header-img {
+    height: 220px;
+    width: 260px;
+    border-radius: 5px;
+}
+
+/*Changing appearance of search button*/
+#run-search {
+    color: white;
+    background-color: #555;
+    border: 1px solid white;
+}
+
+/*making results cards uniform*/
+.card-height {
+    position: relative;;
+    overflow-y: scroll;
+    height:150px;
+}
+
+#results .card {
+    height:500px;
+    margin: 0px 5px 10px 0px;
+}
+
+.card-img-top{
+    overflow: hidden;
+}
+
+/* Underline From Center */
+.hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hvr-underline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: #2098D1;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+    left: 0;
+    right: 0;
+  }
+
+/*Wikipedia Search Container*/
+.container-fluid {
+    position:fixed;
+    bottom:0;
+    height:250px;
+}
+
+#close {
+    float: right;
+}
